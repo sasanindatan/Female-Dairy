@@ -1,0 +1,343 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>FEMALE DIARY</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="style.scss">
+
+
+<style>
+  .mySlides {display:none;}
+* {
+    padding: 0;
+    margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  padding: 80px;
+  text-align: center;
+  background-image: image-set("oyy.jpg");
+  color: rgb(250, 248, 248);
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #0c0000;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: rgb(245, 237, 237);
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #453955;
+  color: rgb(7, 6, 6);
+}
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color:  #8131eb;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  flex: 70%;
+  background-color: rgb(241, 14, 90);
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-image: image-set("fd.jpg");
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width:100%;
+  }
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+}
+.footerNav ul li a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 2em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.footerNav ul li a :hover{
+    opacity: 1;
+}
+
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1><b>Welcome To Tacan</b></h1>
+  <p><h4>A Place Where You Can Express U're Style</h4></p>
+</div>
+
+<div class="navbar">
+  <a href="#Services">SERVICES</a>
+  <a href="#About Us">ABOUT US</a>
+  <a href="#Portfolio">PORTFOLIO</a>
+  <a href="#Custom">CUSTOM</a>
+  <a href="#Our Team" class="right">OUR TEAM</a>
+  <a href="#Contact Us" class="right">CONTACT US</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2 id="About Us"><b>About Us</b></h2>
+    <img src="ic.jpg" width="300" height="300">
+    <p><h4>We are a digital platform that works in the fashion sector. You can find various types of very fashionable clothing on our platform. The types of clothing in our shop are very supportive for women who wear the hijab or not.</h4></p>
+
+    <h3 id="Our Team"><b>Our Team</b></h3>
+    <p>Owner of our business.</p>
+    <p>Marsha Putri M</p>
+    <img src="aca.jpg"width="200px" height="200px">
+    <br>
+    <p>Natalia Sasmita</p>
+    <img src="nata.jpg" width="200px" height="200px">
+    <br>
+    <p>Salsabila AN</p>
+    <img src="salsa.jpg" width="200px" height="200px">>
+    <p>Salwaa Faradina</p>
+    <img src="awa.jpg" width="200px" height="200px">>
+    <p>Tirta Mahardhani</p>
+    <img src="tirta.jpg"width="200px" height="200px"><br></br>
+
+    <div class="container">
+        <div style="text-align:center">
+          <h2 id="Contact Us"><b>Contact Us</b></h2>
+        </div>
+        <div class="row">
+          <div class="column">
+              <label for="fname"><b>First Name</b></label><br></br>
+              <input type="text" id="fname" name="firstname" placeholder="Your name.."><br></br>
+              <label for="lname"><b>Name</b></label><br></br>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br></br>
+              <label for="country"><b>Country</b></label><br></br>
+              <select id="country" name="country"><br></br>
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+                <option value="usa">Indonesia</option>
+              </select><br></br>
+              <label for="subject"><b>Subject</b></label><br></br>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:90px"></textarea><br></br>
+              <input type="submit" value="Submit"><br></br>
+            </form>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+    <br>
+  <div class="main">
+    <h2 id="Services"><b>Services</b></h2>
+  <p style="color :lightgreen"><b>E-COMMERCES</b> </p>
+   <img src="e-com.jpg" width="300px" height="200px">
+    <p><h4>We are available in various marketplaces spread across 200 countries around the world.</h4></p><br></br>
+
+    <p style="color :lightgreen"><b>RESPONSIVE DESIGNS</b> </p>
+    <img src="rd.jpg" width="300px" height="200px">
+    <p><h4>We have the best designers who have passed our rigorous selection that will help you choose the best style.</h4></p><br></br>
+
+    <p style="color :lightgreen"><b>CUSTOM</b> </p>
+        <img src="custom.jpg" width="300px" height="300px">
+    <p><h4> provide services for those of you who want to make clothes with your own designs and then screen printing them on your clothes according to your request.</h4></p><br>
+
+    <h2 id="Portfolio"><b>Portfolio</b></h2>
+    <p style="color :lightgreen"><b>HIJAB FRIENDLY </b></p>
+
+    <div class="w3-content w3-section" style="max-width:500px">
+    <a href="Hjab 2.jpg"><img class="mySlides" src="Hjab 2.jpg" style="width:70%"></a>
+    <a href="hijab 3.jpg"><img class="mySlides" src="hijab 3.jpg" style="width:70%"></a>
+     <a href="Hijab 4.jpg"><img class="mySlides" src="Hijab 4.jpg" style="width:70%"></a>
+     <a href="hijab 5.jpg"> <img class="mySlides" src="hijab 5.jpg" style="width:70%"></a>
+    <a href="hijab 6.jpg" ><img class="mySlides" src="hijab 6.jpg" style="width:70%"></a>
+    <a href="hijab 7.jpg"><img class="mySlides" src="hijab 7.jpg" style="width:70%"></a>
+    <a href="hijab 8.jpg"><img class="mySlides" src="hijab 8.jpg" style="width:70%"></a>
+    <a href="hijab 9.jpg"><img class="mySlides" src="hijab 9.jpg" style="width:70%"></a>
+    </div>
+    
+    <script>
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+    </script>
+     <p><h4>Have a large selection of clothing that is very hijab friendly.
+        Hijab friendly clothing, suitable for use both at formal and non-formal events</h4></p><br></br>
+     <br>
+
+     <p style="color :lightgreen"><b>NON HIJAB FRIENDLY</b></p>
+
+     <div class="w3-content w3-section" style="max-width:500px">
+        <a href="non hijab 2.jpg"><img class="mySlides w3-animate-top" src="non hijab 2.jpg" style="width:70%"></a>
+        <a href="non hijab 3.jpg"><img class="mySlides w3-animate-top" src="non hijab 3.jpg" style="width:70%"></a>
+        <a href="non hijab 4.jpg"><img class="mySlides w3-animate-top" src="non hijab 4.jpg" style="width:70%"></a>
+        <a href="non hijab 4.jpg"><img class="mySlides w3-animate-bottom" src="non hijab 5.jpg" style="width:70%"></a>
+        <a href="non hijab 4.jpg"><img class="mySlides w3-animate-top" src="non hijab 6.jpg" style="width:70%"></a>
+        <a href="non hijab 4.jpg "><img class="mySlides w3-animate-bottom" src="non hijab 7.jpg" style="width:70%"></a>
+        <a href="non hijab 8.jpg"><img class="mySlides w3-animate-bottom" src="non hijab 8.jpg" style="width:70%"></a>
+    </div>
+    
+    <script>
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 2500);    
+    }
+    </script>
+    
+    <p><h4>We also have a large selection of non hijab friendly clothing.
+        Meanwhile, non-hijab friendly clothing is more suitable for casual events</h4></p>
+
+    <br>
+    <h2 id="Custom"><b>Custom</b></h2>
+    <p><h4>Your Creativity will be AMAZING...</h4></p>
+    <a href="custom.jpg"><img src="custom.jpg" width="300px" height="300px"></a>
+    <a href="sc2.jpg"><img src="sc2.jpg" width="300px" height="300px"></a>
+    <a href="baju adat.jpg"><img src="baju adat.jpg" width="200px" height="300px"></a>
+    <p><h4>We accept all types of custom clothing in various sizes, such as the size examples show in the image above</h4></p>
+    
+  </div>
+</div>
+
+<div class="footer">
+  <h1><b>THANK YOU</b></h1>
+ <br>
+ <footer>
+ <div class="footerContainer">
+    <div class="sosialIcons">
+        <a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-google-plus"></i></a>
+        <a href=""><i class="fa-brands fa-youtube"></i></a>
+    </div>
+    </div>
+    <div class="footerBottom">
+        <p>Copyright &copy;2024; Designed by<span class="designer">Tacan</span></p>
+</div>
+</footer>
+
+</body>
+</html>
